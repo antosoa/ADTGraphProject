@@ -454,7 +454,7 @@ public class MapGraph {
 		System.out.println("Num edges: " + firstMap.getNumEdges()); // should be 22
 		
 		List<GeographicPoint> r = firstMap.bfs(new GeographicPoint(1.0, 1.0), new GeographicPoint(8.0, -1.0));
-		System.out.println(r); // (1, 1) -> (4, 1) -> (7, 3) -> (8, -1)
+		System.out.println("BFS --> " + r); // (1, 1) -> (4, 1) -> (7, 3) -> (8, -1)
 		
 		/* Here are some test cases you should try before you attempt 
 		 * the Week 4 End of Week Quiz, EVEN IF you score 100% on the 
