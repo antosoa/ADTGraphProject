@@ -20,7 +20,7 @@ public class MapEdge {
 		start = n1;
 		end = n2;
 		this.roadName = roadName;
-		this.roadType = roadType;
+		this.setRoadType(roadType);
 		this.length = length;
 	}
 	
@@ -49,5 +49,13 @@ public class MapEdge {
 		else if (node.equals(end))
 			return start;
 		throw new IllegalArgumentException("Looking for " +"a point that is not in the edge");
+	}
+
+	public String getRoadType() {
+		return roadType;
+	}
+
+	public void setRoadType(String roadType) {
+		this.roadType = roadType;
 	}
 }

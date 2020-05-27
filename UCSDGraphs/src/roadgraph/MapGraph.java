@@ -446,16 +446,24 @@ public class MapGraph {
 	{
 		System.out.print("Making a new map...");
 		MapGraph firstMap = new MapGraph();
+		MapGraph secMap = new MapGraph();
 		System.out.print("DONE. \nLoading the map...");
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", firstMap);
+		GraphLoader.loadRoadMap("data/testdata/customdata.map", secMap);
 		System.out.println("DONE.");
 		
 		// You can use this method for testing.  
 		System.out.println("Num nodes: " + firstMap.getNumVertices()); // should be 9
 		System.out.println("Num edges: " + firstMap.getNumEdges()); // should be 22
 		
+		System.out.println("Num nodes: " + secMap.getNumVertices()); // should be 6
+		System.out.println("Num edges: " + secMap.getNumEdges()); // should be 7
+		
 		List<GeographicPoint> r = firstMap.bfs(new GeographicPoint(1.0, 1.0), new GeographicPoint(8.0, -1.0));
 		System.out.println("BFS --> " + r); // (1, 1) -> (4, 1) -> (7, 3) -> (8, -1)
+		
+		List<GeographicPoint> r2 = secMap.bfs(new GeographicPoint(1.0, 1.1), new GeographicPoint(3.0, 4.2));
+		System.out.println("BFS 2 --> " + 2);  
 		
 		/* Here are some test cases you should try before you attempt 
 		 * the Week 4 End of Week Quiz, EVEN IF you score 100% on the 
