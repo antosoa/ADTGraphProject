@@ -6,7 +6,7 @@ A project to create a custom 2D Map, using graph data structures, DFS, BFS
 ### Programming Assignment: Project: Implementing Graphs
 -  basicgraph.Graph.java
 - basicgraph.GraphAdjList.java
-- basicgraph.GraphAdjMatrix.jav-a
+- basicgraph.GraphAdjMatrix.java
 
 ## Week 3
 ### Programming Assignment: Project: Class Design and Graph Search
