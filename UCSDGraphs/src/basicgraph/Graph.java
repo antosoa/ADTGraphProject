@@ -64,7 +64,7 @@ public abstract class Graph {
 	 * @return index of newly added vertex
 	 */
 	public int addVertex() {
-		implementAddVertex();
+		implementAddVertex();        //implemented by subclasses AdjList and Adj Matrix
 		numVertices ++;
 		return (numVertices-1);
 	}
@@ -83,7 +83,7 @@ public abstract class Graph {
 	public void addEdge(int v , int w) {
 		numEdges ++;
 		if (v < numVertices && w < numVertices) {
-			implementAddEdge(v , w);			
+			implementAddEdge(v , w);			  //implemented by subclasses AdjList and Adj Matrix
 		}
 		else {
 			throw new IndexOutOfBoundsException();

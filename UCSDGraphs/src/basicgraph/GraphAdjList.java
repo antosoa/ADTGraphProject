@@ -117,8 +117,8 @@ public class GraphAdjList extends Graph {
 		String s = "Adjacency list";
 		s += " (size " + getNumVertices() + "+" + getNumEdges() + " integers):";
 
-		for (int v : adjListsMap.keySet()) {
-			s += "\n\t"+v+": ";
+		for (int v : adjListsMap.keySet()) {         //The java.util.HashMap.keySet() method is used to create a set out of the key elements contained in the hash map. 
+			s += "\n\t"+v+": ";                      //It basically returns a set view of the keys or we can create a new set and store the key elements in them.
 			for (int w : adjListsMap.get(v)) {
 				s += w+", ";
 			}
