@@ -53,7 +53,8 @@ public class MapGraph {
 	public int getNumVertices()
 	{
 		// Implement this method in WEEK 3
-		return pointNodeMap.values().size();
+		//return pointNodeMap.values().size();
+		return pointNodeMap.keySet().size();
 	}
 	
 	/**
