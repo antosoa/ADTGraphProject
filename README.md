@@ -8,8 +8,8 @@ A project to create a custom 2D Map, using graph data structures, DFS, BFS
 - basicgraph.GraphAdjLis- t.java
 - basicgraph.GraphAdjMat- rix.jav- - a
 
-## Week##  3
-### Pro### gramming Assignment: Project: Class Design and Graph Search
+## Week 3
+### Programming Assignment: Project: Class Design and Graph Search
 - roadg- raph.MapGraph.java
 - roadg- raph.MapNode.java
 - roadg - raph.MapEdge.java
