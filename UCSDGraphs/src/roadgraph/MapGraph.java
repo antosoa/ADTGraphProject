@@ -458,19 +458,20 @@ public class MapGraph {
 		
 		System.out.println("Num nodes: " + secMap.getNumVertices()); // should be 6
 		System.out.println("Num edges: " + secMap.getNumEdges()); // should be 7
+		System.out.println("nodes: " + secMap.pointNodeMap.keySet());
 		
 		List<GeographicPoint> r = firstMap.bfs(new GeographicPoint(1.0, 1.0), new GeographicPoint(8.0, -1.0));
 		System.out.println("BFS --> " + r); // (1, 1) -> (4, 1) -> (7, 3) -> (8, -1)
 		
-		List<GeographicPoint> r2 = secMap.bfs(new GeographicPoint(1.0, 1.1), new GeographicPoint(3.0, 4.2));
-		System.out.println("BFS 2 --> " + 2);  
+		List<GeographicPoint> r2 = secMap.bfs(new GeographicPoint(1.0, 2.0), new GeographicPoint(1.0, 10.0));
+		System.out.println("BFS 2 custom --> " + r2);  
 		
 		/* Here are some test cases you should try before you attempt 
 		 * the Week 4 End of Week Quiz, EVEN IF you score 100% on the 
 		 * programming assignment.
 		 */
 		
-		MapGraph simpleTestMap = new MapGraph();
+     	MapGraph simpleTestMap = new MapGraph();
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", simpleTestMap);
 		
 		GeographicPoint testStart = new GeographicPoint(1.0, 1.0);
@@ -480,26 +481,25 @@ public class MapGraph {
 		List<GeographicPoint> testroute = simpleTestMap.dijkstra(testStart,testEnd);
 		List<GeographicPoint> testroute2 = simpleTestMap.aStarSearch(testStart,testEnd);
 		
-		
 		MapGraph testMap = new MapGraph();
 		GraphLoader.loadRoadMap("data/maps/utc.map", testMap);
 		
 		// A very simple test using real data
-		testStart = new GeographicPoint(32.869423, -117.220917);
+/*		testStart = new GeographicPoint(32.869423, -117.220917);
 		testEnd = new GeographicPoint(32.869255, -117.216927);
 		System.out.println("Test 2 using utc: Dijkstra should be 13 and AStar should be 5");
 		testroute = testMap.dijkstra(testStart,testEnd);
 		testroute2 = testMap.aStarSearch(testStart,testEnd);
-		
+*/		
 		
 		// A slightly more complex test using real data
-		testStart = new GeographicPoint(32.8674388, -117.2190213);
+/*   	testStart = new GeographicPoint(32.8674388, -117.2190213);
 		testEnd = new GeographicPoint(32.8697828, -117.2244506);
 		System.out.println("Test 3 using utc: Dijkstra should be 37 and AStar should be 10");
 		testroute = testMap.dijkstra(testStart,testEnd);
 		testroute2 = testMap.aStarSearch(testStart,testEnd);
-		
-		
+*/	
+
 		
 		/* Use this code in Week 4 End of Week Quiz */
 		MapGraph theMap = new MapGraph();

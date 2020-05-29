@@ -313,8 +313,13 @@ public abstract class Graph {
 		System.out.println("****");
 		System.out.println("Roads / intersections:");
 		GraphAdjList graphFromFile = new GraphAdjList();
+		
+		GraphAdjList graphFromFile2 = new GraphAdjList();
 		GraphAdjMatrix matrixGraphFromFile = new GraphAdjMatrix();
 		GraphLoader.loadRoadMap("data/testdata/simpletest.map", graphFromFile);
+		
+		GraphLoader.loadRoadMap("data/testdata/customdata.map", graphFromFile2);
+		System.out.println(graphFromFile2.toString());
 		System.out.println(graphFromFile.toString());
 		
 		System.out.println("Observe all degrees are <= 12.");
