@@ -23,7 +23,7 @@ import util.GraphLoader;
  */
 
 public abstract class Graph {
-
+	
 	private int numVertices;
 	private int numEdges;
 	//optional association of String labels to vertices 

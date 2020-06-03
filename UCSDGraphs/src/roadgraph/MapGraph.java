@@ -21,6 +21,16 @@ import geography.GeographicPoint;
 import util.GraphLoader;
 
 /**
+ * 
+ * Which of the following is the better representation for the MapGraph graph 
+ * that you implemented in the programming project this week?
+ * <<Adjacency List>> 
+ * Because the number of edges is relatively similar to the number of nodes 
+ * (i.e. each intersection has roads only to a small number of intersections nearby), 
+ * an adjacency list will be space efficient, while a matrix will not.,
+ * 
+ */
+/**
  * @author UCSD MOOC development team and YOU
  * 
  * A class which represents a graph of geographic locations
